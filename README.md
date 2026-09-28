@@ -207,4 +207,12 @@ In both techniques, **Quadratic Discriminant Analysis** performed with the highe
 
 ---
 
-**Note**: A limitation is that the one-hot encoded categorical variables are binary and therefore do not follow a Gaussian distribution per the assumptions of the models.
+## One-Hot Encoded Features
+
+A limitation is that the one-hot encoded categorical variables are binary and therefore do not follow a Gaussian distribution per the assumptions of the models. Removing the one-hot encoded categorical features **improved minority-class recall** and **F1-score** for all three models, while **accuracy also increased** slightly.
+
+| Model | Original Accuracy | Without One-Hot Accuracy | Original Minority Recall | Without One-Hot Recall | Original Minority F1 | Without One-Hot F1 |
+|:---|---:|---:|---:|---:|---:|---:|
+| Gaussian Naive Bayes | 0.88 | **0.90** | 0.27 | **0.45** | 0.35 | **0.49** |
+| Linear Discriminant Analysis | 0.90 | **0.91** | 0.23 | **0.43** | 0.33 | **0.51** |
+| Quadratic Discriminant Analysis | 0.88 | **0.89** | 0.33 | **0.54** | 0.38 | **0.52** |
