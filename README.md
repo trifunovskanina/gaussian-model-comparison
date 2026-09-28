@@ -154,7 +154,7 @@ This information is only available after the call ends and therefore would not b
 
 ## Results
 
-The models were evaluated using the original training data, then again after undersampling and oversampling. Accuracy and minority-class (`1`) recall are emphasized because accuracy alone can be misleading when the target variable is imbalanced.
+The models were evaluated using the original training data, then again after undersampling and SMOTE. Accuracy and minority-class (`1`) recall are emphasized because accuracy alone can be misleading when the target variable is imbalanced.
 
 ### Before Balancing
 
@@ -179,6 +179,18 @@ The models were evaluated using the original training data, then again after und
 | **Gaussian Naive Bayes** | 0.83 | 0.40 | 0.35 |
 | **Linear Discriminant Analysis** | 0.74 | **0.63** | 0.36 |
 | **Quadratic Discriminant Analysis** | **0.88** | 0.41 | **0.43** |
+
+---
+
+## Cross-Validation
+
+Five-fold **stratified cross-validation** was performed on the training data to assess the consistency of model performance across different data splits. Stratification preserves the class distribution across folds. Model performance is reported as the mean and standard deviation across the five folds.
+
+| Model | Accuracy | Minority-Class Recall | Minority-Class F1 |
+| ----------------------------------- | -------: | --------------------: | ----------------: |
+| **Gaussian Naive Bayes**            | 0.88 ± 0.00 | 0.28 ± 0.01 | 0.35 ± 0.01 |
+| **Linear Discriminant Analysis**    | **0.89** ± 0.00 | 0.23 ± 0.01 | 0.33 ± 0.01 |
+| **Quadratic Discriminant Analysis** | 0.88 ± 0.00 | **0.33** ± 0.01 | **0.38** ± 0.01 |
 
 ---
 
