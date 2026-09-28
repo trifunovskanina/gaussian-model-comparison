@@ -215,4 +215,4 @@ A limitation is that the one-hot encoded categorical variables are binary and th
 |:---|---:|---:|---:|---:|---:|---:|
 | Gaussian Naive Bayes | 0.88 | **0.90** | 0.27 | **0.45** | 0.35 | **0.49** |
 | Linear Discriminant Analysis | 0.90 | **0.91** | 0.23 | **0.43** | 0.33 | **0.51** |
-| Quadratic Discriminant Analysis | 0.88 | **0.89** | 0.33 | **0.54** | 0.38 | **0.52** |
+| Quadratic Discriminant Analysis | 0.88 | **0.89** | 0.33 | **0.54** | 0.39 | **0.52** |
