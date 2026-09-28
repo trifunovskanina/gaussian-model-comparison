@@ -189,8 +189,8 @@ Five-fold **stratified cross-validation** was performed on the training data to 
 | Model | Accuracy | Minority-Class Recall | Minority-Class F1 |
 | ----------------------------------- | -------: | --------------------: | ----------------: |
 | **Gaussian Naive Bayes**            | 0.88 ± 0.00 | 0.28 ± 0.01 | 0.35 ± 0.01 |
-| **Linear Discriminant Analysis**    | **0.89** ± 0.00 | 0.23 ± 0.01 | 0.33 ± 0.01 |
-| **Quadratic Discriminant Analysis** | 0.88 ± 0.00 | **0.33** ± 0.01 | **0.38** ± 0.01 |
+| **Linear Discriminant Analysis**    | 0.89 ± 0.00 | 0.23 ± 0.01 | 0.33 ± 0.01 |
+| **Quadratic Discriminant Analysis** | 0.88 ± 0.00 | 0.33 ± 0.01 | 0.38 ± 0.01 |
 
 ---
 
